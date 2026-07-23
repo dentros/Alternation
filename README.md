@@ -1,8 +1,20 @@
 # Alternation Measures
 
-Code and experimental data for "The Coordination Gap: Multi-Agent Alternation Metrics for Temporal Fairness in Repeated Games" (Papadopoulos, Freire, Sanchez-Fibla, Psannis).
+## Citation
 
-Archived version (Zenodo): https://doi.org/10.5281/zenodo.18528891
+If you use this repository, please cite:
+
+
+@article{papadopoulos2026coordinationgap,
+  title={The Coordination Gap: Multi-Agent Alternation Metrics for Temporal Fairness in Repeated Games},
+  author={Papadopoulos, Nikolaos Al. and Psannis, Konstantinos E.},
+  journal={arXiv preprint arXiv:2603.05789},
+  year={2026},
+  doi={10.48550/arXiv.2603.05789}
+
+
+Data Archived version (Zenodo): https://doi.org/10.5281/zenodo.18528891
+
 
 ## Repository contents
 
@@ -14,6 +26,11 @@ Archived version (Zenodo): https://doi.org/10.5281/zenodo.18528891
 ## Data availability note
 
 Two checkpoint files (`result_8agents_Type-B_ILF.pkl` and `result_8agents_Type-B_IQF.pkl`, approximately 235 MB each) exceed GitHub's file size limit and are not hosted in this repository. They are available on request from the corresponding author (nikolaos.papadopoulos@uom.edu.gr).
+
+## Ownership
+
+Nikolaos Al. Papadopoulos
+
 
 ## License
 
