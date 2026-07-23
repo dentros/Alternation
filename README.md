@@ -2,8 +2,9 @@
 
 ## Citation
 
-If you use this repository, please cite:
+If you use this repository, the data, the Honey-Jar Game (HJG), the Alternation (ALT) metrics, or the accompanying evaluation framework in your research, please cite:
 
+Papadopoulos, N. A., & Psannis, K. E. (2026). *The Coordination Gap: Multi-Agent Alternation Metrics for Temporal Fairness in Repeated Games*. arXiv:2603.05789. https://doi.org/10.48550/arXiv.2603.05789
 
 @article{papadopoulos2026coordinationgap,
   title={The Coordination Gap: Multi-Agent Alternation Metrics for Temporal Fairness in Repeated Games},
@@ -13,7 +14,7 @@ If you use this repository, please cite:
   doi={10.48550/arXiv.2603.05789}
 
 
-Data Archived version (Zenodo): https://doi.org/10.5281/zenodo.18528891
+Code & Data Archived version (Zenodo): https://doi.org/10.5281/zenodo.18528891
 
 
 ## Repository contents
