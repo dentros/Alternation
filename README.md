@@ -29,6 +29,8 @@ Code and data archive (Zenodo): https://doi.org/10.5281/zenodo.18528891
 
 Two checkpoint files (`result_8agents_Type-B_ILF.pkl` and `result_8agents_Type-B_IQF.pkl`, approximately 235 MB each) exceed GitHub's file size limit and are therefore not hosted in this repository. They are available from the corresponding author upon reasonable request (nikolaos.papadopoulos@uom.edu.gr).
 
+All checkpoints in `checkpoints/` were computed after the July 2026 AALT fix, which counts exclusive wins only, as defined in the paper. `metrics.py` carries the same fix since November 2026.
+
 ## Ownership
 
 The original implementation of the Honey-Jar Game (HJG), the Alternation (ALT) metrics, the evaluation framework, and all source code in this repository were developed by Nikolaos Al. Papadopoulos.

@@ -96,7 +96,7 @@ def compute_alt_metrics_optimized(num_episodes, num_agents, terminal_occurrences
         t_data_start = time.time()
 
         who_reached_terminal_in_batch = np.zeros(num_agents)
-        number_of_winnings_in_batch_per_agent = np.zeros(num_agents)  # For AALT
+        exclusive_wins_in_batch_per_agent = np.zeros(num_agents)  # For AALT (exclusive wins only)
         term_occ = 0
         exclusive_win_episodes = 0
 
@@ -111,7 +111,8 @@ def compute_alt_metrics_optimized(num_episodes, num_agents, terminal_occurrences
             for i in range(num_agents):
                 if top_agents_per_episode[eb][i] == 1:
                     who_reached_terminal_in_batch[i] = 1
-                    number_of_winnings_in_batch_per_agent[i] += 1  # Count wins per agent
+                    if num_terminal_in_episode == 1:
+                        exclusive_wins_in_batch_per_agent[i] += 1  # Sole arrival = exclusive win
 
         num_terminal_agents = sum(who_reached_terminal_in_batch)
         time_data_collection += time.time() - t_data_start
@@ -156,12 +157,15 @@ def compute_alt_metrics_optimized(num_episodes, num_agents, terminal_occurrences
             beta_CALT[batch_id] = 0
         time_calt_calc += time.time() - t_calt_start
 
-        # ===== AALT: Agents with exactly 1 win / total terminal occurrences =====
-        # Formula: β_j^AALT = g_j / t_j (g_j = count of AGENTS who won exactly 1 time)
-        # Legacy code (line 139-142): countOfExclusiveWinnersInBatch / termOccPerBatch
+        # ===== AALT: Agents with exactly 1 EXCLUSIVE win / total terminal occurrences =====
+        # Formula: β_j^AALT = g_j / τ_j (paper definition)
+        # Fix (July 2026): g_j counts EXCLUSIVE wins only (sole arrival in an episode).
+        # The earlier counter also included tie arrivals, so agents that only ever tied
+        # could be credited as exclusive winners. The uploaded checkpoints were computed
+        # after this fix.
         t_aalt_start = time.time()
         if term_occ > 0:
-            count_of_exclusive_winners_in_batch = sum(1 for wins in number_of_winnings_in_batch_per_agent if wins == 1)
+            count_of_exclusive_winners_in_batch = sum(1 for wins in exclusive_wins_in_batch_per_agent if wins == 1)
             beta_AALT[batch_id] = count_of_exclusive_winners_in_batch / term_occ
         else:
             beta_AALT[batch_id] = 0
