@@ -1,0 +1,14 @@
+{
+  "title": "Alternation: code and data for The Coordination Gap (v1.1.0)",
+  "upload_type": "software",
+  "description": "<p>Code and data for &quot;The Coordination Gap&quot; paper</p>",
+  "creators": [
+    {
+      "name": "Papadopoulos, Nikolaos Al.",
+      "orcid": "0000-0003-1842-8227"
+    }
+  ],
+  "license": "gpl-3.0",
+  "access_right": "open",
+  "version": "v1.1.0"
+}
