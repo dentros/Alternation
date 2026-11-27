@@ -4,12 +4,12 @@
 
 If you use this repository, the data, the Honey-Jar Game (HJG), the Alternation (ALT) metrics, or the accompanying evaluation framework in your research, please cite:
 
-Papadopoulos, N. A., & Psannis, K. E. (2026). *The Coordination Gap: Multi-Agent Alternation Metrics for Temporal Fairness in Repeated Games*. arXiv:2603.05789. https://doi.org/10.48550/arXiv.2603.05789
+Papadopoulos, N. A., Freire, I. T., Sanchez-Fibla, M., & Psannis, K. E. (2026). *The Coordination Gap: Multi-Agent Alternation Metrics for Temporal Fairness in Repeated Games*. arXiv:2603.05789. https://doi.org/10.48550/arXiv.2603.05789
 
 ```bibtex
 @article{papadopoulos2026coordinationgap,
   title={The Coordination Gap: Multi-Agent Alternation Metrics for Temporal Fairness in Repeated Games},
-  author={Papadopoulos, Nikolaos Al. and Psannis, Konstantinos E.},
+  author={Papadopoulos, Nikolaos Al. and Freire, Ismael Tito and Sanchez-Fibla, Marti and Psannis, Konstantinos E.},
   journal={arXiv preprint arXiv:2603.05789},
   year={2026},
   doi={10.48550/arXiv.2603.05789}
@@ -34,6 +34,8 @@ All checkpoints in `checkpoints/` were computed after the July 2026 AALT fix, wh
 ## Ownership
 
 The original implementation of the Honey-Jar Game (HJG), the Alternation (ALT) metrics, the evaluation framework, and all source code in this repository were developed by Nikolaos Al. Papadopoulos.
+
+Co-authors of the accompanying paper contributed ideas, supervision and manuscript review. They did not author code. AI coding assistants were used as tools under the author's direction; design, decisions and review are the author's. External code contributions are not accepted.
 
 Copyright (c) 2026 Nikolaos Al. Papadopoulos.
 
