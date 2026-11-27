@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software, please cite the paper below as well as the
+  software archive.
+title: "Alternation: code and data for The Coordination Gap"
+type: software
+version: v1.1.0
+date-released: 2026-11-25
+doi: 10.5281/zenodo.18528890
+authors:
+  - family-names: Papadopoulos
+    given-names: Nikolaos Al.
+    orcid: https://orcid.org/0000-0003-1842-8227
+    affiliation: >-
+      Department of Applied Informatics, University of Macedonia,
+      Thessaloniki, Greece
+repository-code: https://github.com/dentros/Alternation
+license: GPL-3.0-only
+preferred-citation:
+  type: article
+  title: >-
+    The Coordination Gap: Multi-Agent Alternation Metrics for Temporal
+    Fairness in Repeated Games
+  authors:
+    - family-names: Papadopoulos
+      given-names: Nikolaos Al.
+    - family-names: Freire
+      given-names: Ismael Tito
+    - family-names: Sanchez-Fibla
+      given-names: Marti
+    - family-names: Psannis
+      given-names: Konstantinos E.
+  journal: arXiv preprint
+  year: 2026
+  doi: 10.48550/arXiv.2603.05789
